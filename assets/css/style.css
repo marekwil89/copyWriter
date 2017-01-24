@@ -58,7 +58,7 @@ header {
         font-style: italic;
         color: #444444; }
   header aside {
-    width: 500px; }
+    width: 400px; }
 
 nav {
   width: 100%;
@@ -116,7 +116,7 @@ nav {
 .config-img {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 40%; }
+  background-position: 30%; }
   .config-img.header-img {
     background-image: url("../img/header-img.jpg"); }
 
