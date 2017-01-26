@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  var headerSentences = ["władam słowem", "Gram w hokej", "Latam i koloryzuje", "władam słowem, Gram w hokej, Latam i koloryzuje"]
+  var headerSentences = ["władam słowem, Gram w hokej, Latam i koloryzuje"]
 
   function writeEffect(sentences, element, typeSpeed){
     var element = $(element)
@@ -8,7 +8,7 @@ $( document ).ready(function() {
 
     var typing = setInterval(function (){
       i++
-      if(i > sentences[j].length+5){
+      if(i > sentences[j].length){
         j++
         if(j >= sentences.length){
           clearInterval(typing)

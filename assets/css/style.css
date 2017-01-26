@@ -2,13 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
 * {
   margin: 0;
-  box-sizing: border-box; }
-
-h1, h2, h3, h4, h5, h6, a {
-  font-family: "Quicksand", sans-serif; }
-
-p {
-  font-family: "Quicksand", sans-serif; }
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 1.2px; }
 
 a {
   text-decoration: none;
@@ -18,10 +14,14 @@ a {
   width: 40px;
   height: 5px;
   margin: 10px 0;
-  background-color: #D4C05D; }
+  background-color: #E11F2C; }
 
 .clear-both {
   clear: both; }
+
+.highlight-text {
+  color: #E11F2C;
+  font-weight: 500; }
 
 header {
   display: -webkit-box;
@@ -36,7 +36,8 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 92vh; }
+  min-height: 92vh;
+  position: relative; }
   header blackquote {
     width: 900px; }
     header blackquote p {
@@ -50,8 +51,8 @@ header {
     header blackquote footer {
       opacity: 0;
       float: right;
-      -webkit-animation: show 8s forwards;
-              animation: show 8s forwards; }
+      -webkit-animation: show 4.2s forwards;
+              animation: show 4.2s forwards; }
       header blackquote footer cite {
         font-size: 20px;
         font-weight: 300;
@@ -60,7 +61,7 @@ header {
   header aside {
     width: 400px; }
 
-.info-section {
+.about-section {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -73,14 +74,57 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh; }
-  .info-section .info-box {
-    width: 550px; }
-    .info-section .info-box h1 {
-      font-size: 30px; }
-    .info-section .info-box p {
-      font-size: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 140vh; }
+  .about-section .about-header {
+    width: 800px;
+    margin-bottom: 150px; }
+    .about-section .about-header h2 {
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 40px;
+      margin-bottom: 25px;
+      text-align: center; }
+    .about-section .about-header p {
+      font-size: 16px;
+      line-height: 20px;
       text-align: justify; }
+  .about-section .about-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .about-section .about-box aside {
+      border-radius: 0 200px 0 0;
+      background: #dadada;
+      -webkit-box-flex: 60%;
+      -webkit-flex: 60%;
+          -ms-flex: 60%;
+              flex: 60%;
+      padding: 120px; }
+      .about-section .about-box aside h3 {
+        font-size: 30px;
+        margin-bottom: 20px; }
+      .about-section .about-box aside p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px; }
+      .about-section .about-box aside ul li {
+        margin-bottom: 10px;
+        line-height: 20px;
+        font-size: 16px; }
+    .about-section .about-box figure {
+      -webkit-box-flex: 40%;
+      -webkit-flex: 40%;
+          -ms-flex: 40%;
+              flex: 40%; }
+      .about-section .about-box figure img {
+        width: 100%; }
 
 nav {
   width: 100%;
@@ -103,6 +147,9 @@ nav {
         display: block;
         padding: 14px;
         font-size: 20px; }
+
+.workplace-section {
+  min-height: 40vh; }
 
 .blinking-cursor {
   font-weight: 100;
@@ -138,7 +185,23 @@ nav {
   .config-img.header-img {
     background-image: url("../img/header-img.jpg");
     background-position: 30%; }
+  .config-img.text-img {
+    background-image: url("../img/text-img.png");
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+    width: 600px;
+    height: 450px;
+    -webkit-filter: opacity(0.22);
+            filter: opacity(0.22);
+    -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+            transform: rotate(20deg); }
   .config-img.info-img {
     background-image: url("../img/info-img.jpg"); }
+  .config-img.workplace-img {
+    background-image: url("../img/workplace-img.jpg");
+    background-position: top;
+    background-attachment: fixed; }
 
 /*# sourceMappingURL=style.css.map */
