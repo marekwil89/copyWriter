@@ -8,7 +8,7 @@
 
 a {
   text-decoration: none;
-  color: #111111; }
+  color: #201C1A; }
 
 .hr {
   width: 40px;
@@ -43,7 +43,7 @@ header {
     header blackquote p {
       font-size: 30px;
       display: inline;
-      color: #111111; }
+      color: #201C1A; }
       header blackquote p:before {
         content: '"'; }
       header blackquote p:after {
@@ -74,57 +74,58 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 140vh; }
-  .about-section .about-header {
-    width: 800px;
-    margin-bottom: 150px; }
-    .about-section .about-header h2 {
+  min-height: 100vh; }
+  .about-section aside {
+    border-radius: 0 200px 0 0;
+    background: #dadada;
+    -webkit-box-flex: 60%;
+    -webkit-flex: 60%;
+        -ms-flex: 60%;
+            flex: 60%;
+    padding: 120px; }
+    .about-section aside h3 {
       font-size: 30px;
-      font-weight: 300;
-      line-height: 40px;
-      margin-bottom: 25px;
-      text-align: center; }
-    .about-section .about-header p {
+      margin-bottom: 20px; }
+    .about-section aside p {
       font-size: 16px;
       line-height: 20px;
-      text-align: justify; }
-  .about-section .about-box {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-    .about-section .about-box aside {
-      border-radius: 0 200px 0 0;
-      background: #dadada;
-      -webkit-box-flex: 60%;
-      -webkit-flex: 60%;
-          -ms-flex: 60%;
-              flex: 60%;
-      padding: 120px; }
-      .about-section .about-box aside h3 {
-        font-size: 30px;
-        margin-bottom: 20px; }
-      .about-section .about-box aside p {
-        font-size: 16px;
-        line-height: 20px;
-        margin-bottom: 20px; }
-      .about-section .about-box aside ul li {
-        margin-bottom: 10px;
-        line-height: 20px;
-        font-size: 16px; }
-    .about-section .about-box figure {
-      -webkit-box-flex: 40%;
-      -webkit-flex: 40%;
-          -ms-flex: 40%;
-              flex: 40%; }
-      .about-section .about-box figure img {
-        width: 100%; }
+      margin-bottom: 20px; }
+    .about-section aside ul li {
+      margin-bottom: 10px;
+      line-height: 20px;
+      font-size: 16px; }
+  .about-section figure {
+    -webkit-box-flex: 40%;
+    -webkit-flex: 40%;
+        -ms-flex: 40%;
+            flex: 40%; }
+    .about-section figure img {
+      width: 100%; }
+
+.intro-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60vh; }
+  .intro-section .intro-box {
+    width: 1150px;
+    text-align: justify; }
+    .intro-section .intro-box h1 {
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 30px; }
+    .intro-section .intro-box p {
+      font-weight: 100;
+      font-size: 16px; }
 
 nav {
   width: 100%;
@@ -148,6 +149,40 @@ nav {
         padding: 14px;
         font-size: 20px; }
 
+.quote-section {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .quote-section blockquote {
+    margin: 20px 0;
+    background: rgba(32, 28, 26, 0.8);
+    width: 900px;
+    padding: 0 70px;
+    color: #FFFFFF;
+    padding: 40px; }
+    .quote-section blockquote p {
+      text-align: justify;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 40px;
+      margin-bottom: 40px; }
+    .quote-section blockquote cite {
+      float: right;
+      font-size: 20px;
+      font-weight: 100;
+      font-style: italic;
+      padding-left: 20px; }
+
 .workplace-section {
   min-height: 40vh; }
 
@@ -162,13 +197,13 @@ nav {
   from, to {
     color: transparent; }
   50% {
-    color: #111111; } }
+    color: #201C1A; } }
 
 @keyframes blink {
   from, to {
     color: transparent; }
   50% {
-    color: #111111; } }
+    color: #201C1A; } }
 @-webkit-keyframes show {
   90% {
     opacity: 0; }
@@ -203,5 +238,8 @@ nav {
     background-image: url("../img/workplace-img.jpg");
     background-position: top;
     background-attachment: fixed; }
+  .config-img.quote-img {
+    background-image: url("../img/quote-img.jpg");
+    background-position: center; }
 
 /*# sourceMappingURL=style.css.map */

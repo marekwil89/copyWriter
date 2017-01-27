@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  var headerSentences = ["władam słowem, Gram w hokej, Latam i koloryzuje"]
+  var headerSentences = ["Doskonale gotuję, władam słowem, latam i koloryzuję."]
 
   function writeEffect(sentences, element, typeSpeed){
     var element = $(element)
