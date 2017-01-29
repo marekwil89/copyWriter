@@ -277,7 +277,7 @@ nav {
       nav .menu li a {
         font-size: 30px; }
   nav .fa-bars {
-    display: block; } }
+    display: inline-block; } }
 .projects-section {
   display: -webkit-box;
   display: -webkit-flex;
