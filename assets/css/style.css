@@ -230,6 +230,8 @@ nav {
     float: right; }
 
 @media (max-width: 760px) {
+  nav .logo {
+    font-size: 30px; }
   nav .menu {
     -webkit-transition: 0.7s all;
             transition: 0.7s all;
