@@ -235,7 +235,10 @@ nav {
   .services-section .service-box {
     border: 1px solid #cfcfd4;
     display: block;
-    width: 300px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 300px;
+        -ms-flex: 0 0 300px;
+            flex: 0 0 300px;
     margin: 20px;
     padding: 20px;
     text-align: center;
