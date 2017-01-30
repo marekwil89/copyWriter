@@ -241,8 +241,10 @@ nav {
 
 @media (max-width: 760px) {
   nav .logo {
-    font-size: 30px; }
+    font-size: 30px;
+    line-height: 60px; }
   nav .menu {
+    z-index: 88;
     -webkit-transition: 0.7s all;
             transition: 0.7s all;
     background: #FFFFFF;
@@ -287,6 +289,7 @@ nav {
       nav .menu li a {
         font-size: 30px; }
   nav .fa-bars {
+    line-height: 60px;
     display: inline-block;
     float: right; } }
 .projects-section {
