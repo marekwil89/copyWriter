@@ -74,6 +74,20 @@ header {
         color: #444444; }
   header aside {
     width: 400px; }
+  header .arrow-down {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    -webkit-transform: translate(-50%, -15%);
+        -ms-transform: translate(-50%, -15%);
+            transform: translate(-50%, -15%);
+    color: #30fc87; }
+    header .arrow-down .fa-arrow-down {
+      padding: 5px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 rgba(48, 252, 135, 0.4);
+      -webkit-animation: pulse 2s infinite;
+              animation: pulse 2s infinite; }
 
 @media (max-width: 1210px) {
   header aside {
@@ -512,6 +526,20 @@ nav {
     content: ".."; }
   90% {
     content: "..."; } }
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(48, 252, 135, 0.4); }
+  70% {
+    box-shadow: 0 0 0 10px rgba(48, 252, 135, 0); }
+  100% {
+    box-shadow: 0 0 0 0 rgba(48, 252, 135, 0); } }
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(48, 252, 135, 0.4); }
+  70% {
+    box-shadow: 0 0 0 10px rgba(48, 252, 135, 0); }
+  100% {
+    box-shadow: 0 0 0 0 rgba(48, 252, 135, 0); } }
 .config-img {
   background-size: cover;
   background-repeat: no-repeat; }
