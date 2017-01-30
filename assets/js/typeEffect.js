@@ -14,7 +14,7 @@ function writeEffect(sentences, element, typeSpeed){
     if(i > sentences[j].length){
       j++
       if(j >= sentences.length){
-        clearInterval(typing)
+        return clearInterval(typing)
       }
       i = 0
     }

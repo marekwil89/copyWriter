@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
 * {
   margin: 0;
@@ -11,7 +12,7 @@ p, li {
   color: #444444; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 0; }
 
 a {
@@ -152,7 +153,8 @@ header {
     .intro-section .intro-box h1 {
       text-align: center;
       font-size: 30px;
-      color: #201C1A; }
+      color: #58C9B9;
+      margin-bottom: 20px; }
     .intro-section .intro-box p {
       text-align: justify;
       font-size: 16px; }
@@ -273,7 +275,7 @@ nav {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      top: 80px;
+      top: 60px;
       bottom: 0; }
     nav .menu li {
       text-align: center;
@@ -508,7 +510,7 @@ nav {
   background-size: cover;
   background-repeat: no-repeat; }
   .config-img.header-img {
-    background-image: url("../img/header-img.jpg");
+    background-image: url("../img/header-img2.jpg");
     background-position: 30%; }
   .config-img.text-img {
     background-image: url("../img/text-img.png");
@@ -529,7 +531,7 @@ nav {
     background-position: top;
     background-attachment: fixed; }
   .config-img.quote-img {
-    background-image: url("../img/quote-img.jpg");
+    background-image: url("../img/quote-img2.jpg");
     background-position: center; }
 
 @media (max-width: 800px) {
