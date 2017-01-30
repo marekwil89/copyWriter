@@ -144,7 +144,7 @@ header {
   color: #02913F;
   opacity: 0; }
   .arrow-up.visible {
-    opacity: 1; }
+    opacity: 0.5; }
   .arrow-up .fa-arrow-up {
     padding: 5px;
     border-radius: 50%;
@@ -390,7 +390,7 @@ nav {
     width: 100%;
     margin: 20px; } }
 .quote-section {
-  min-height: 50vh;
+  min-height: 60vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
