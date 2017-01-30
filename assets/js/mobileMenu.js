@@ -13,9 +13,11 @@ function transparentMenu(){
   var wScroll = $(this).scrollTop();
   if(wScroll > 0){
     $('nav').removeClass('transparent')
+    $('.menu, .logo, .fa-bars').addClass('small')
   }
   else{
     $('nav').addClass('transparent')
+    $('.menu, .logo, .fa-bars').removeClass('small')
   }
 }
 

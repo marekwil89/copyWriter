@@ -208,14 +208,18 @@ nav {
     line-height: 80px;
     font-size: 40px;
     text-decoration: none;
-    display: inline-block; }
+    display: inline-block;
+    -webkit-transition: 0.3s all;
+            transition: 0.3s all; }
   nav .menu {
     margin-right: 20px;
     line-height: 80px;
     list-style: none;
     padding: 0;
     float: right;
-    display: block; }
+    display: block;
+    -webkit-transition: 0.3s all;
+            transition: 0.3s all; }
     nav .menu li {
       display: inline-block; }
       nav .menu li a {
@@ -227,12 +231,15 @@ nav {
     cursor: pointer;
     margin-right: 20px;
     line-height: 80px;
-    float: right; }
+    float: right;
+    -webkit-transition: 0.3s all;
+            transition: 0.3s all; }
+  nav .menu.small, nav .fa-bars.small, nav .logo.small {
+    line-height: 60px; }
 
 @media (max-width: 760px) {
   nav .logo {
-    font-size: 30px;
-    display: inline; }
+    font-size: 30px; }
   nav .menu {
     -webkit-transition: 0.7s all;
             transition: 0.7s all;
@@ -278,7 +285,8 @@ nav {
       nav .menu li a {
         font-size: 30px; }
   nav .fa-bars {
-    display: inline; } }
+    display: inline-block;
+    float: right; } }
 .projects-section {
   display: -webkit-box;
   display: -webkit-flex;
