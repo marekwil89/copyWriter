@@ -51,20 +51,19 @@ header {
   min-height: 100vh;
   position: relative; }
   header blockquote {
-    width: 900px; }
-    header blockquote p {
+    width: 1200px; }
+    header blockquote .header-typing {
       text-align: justify;
-      font-size: 30px;
+      font-size: 40px;
       display: inline;
       color: #201C1A;
-      line-height: 30px; }
-      header blockquote p:before {
+      line-height: 40px; }
+      header blockquote .header-typing:before {
         content: '"'; }
-      header blockquote p:after {
+      header blockquote .header-typing:after {
         content: '"'; }
     header blockquote footer {
       opacity: 0;
-      float: left;
       -webkit-animation: show 4.2s forwards;
               animation: show 4.2s forwards; }
       header blockquote footer cite {
@@ -73,8 +72,11 @@ header {
         font-style: italic;
         color: #444444; }
   header aside {
-    width: 400px; }
+    width: 200px; }
 
+@media (max-width: 1950px) {
+  header blockquote .header-typing {
+    font-size: 30px; } }
 @media (max-width: 1210px) {
   header aside {
     display: none; } }
@@ -97,7 +99,7 @@ header {
           align-items: center;
   min-height: 100vh; }
   .about-section aside {
-    border-radius: 0 200px 0 0;
+    border-radius: 0 200px 200px 0;
     background: #EAEAEC;
     -webkit-box-flex: 60%;
     -webkit-flex: 60%;
@@ -134,6 +136,25 @@ header {
         padding-left: 15px; }
     .about-section figure {
       display: none; } }
+.action-section {
+  min-height: 40vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF; }
+  .action-section h2 {
+    font-size: 30px;
+    color: #201C1A; }
+
 .arrow-up {
   -webkit-transition: 0.3s all;
           transition: 0.3s all;
@@ -195,6 +216,7 @@ header {
       padding: 60px;
       width: 360px; }
       .contact-section .contact-box main p, .contact-section .contact-box main address, .contact-section .contact-box aside p, .contact-section .contact-box aside address {
+        font-family: "Raleway", sans-serif;
         font-size: 16px;
         font-style: normal;
         display: block;
@@ -203,7 +225,7 @@ header {
         text-transform: uppercase;
         text-decoration: none;
         color: #444444;
-        font-weight: 700; }
+        font-weight: 300; }
   .contact-section .icons-box {
     margin: 20px 0;
     display: -webkit-box;
@@ -508,6 +530,7 @@ nav {
     padding: 0 70px;
     padding: 40px; }
     .quote-section blockquote p {
+      font-family: "Raleway", sans-serif;
       color: #FFFFFF;
       text-align: justify;
       font-size: 30px;
