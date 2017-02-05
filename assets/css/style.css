@@ -35,6 +35,24 @@ a {
   color: #02913F;
   font-weight: 500; }
 
+.site-construction {
+  z-index: 1204;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #201C1A; }
+  .site-construction.is-hide {
+    display: none; }
+  .site-construction .close-btn {
+    color: #FFFFFF;
+    cursor: pointer; }
+  .site-construction p {
+    color: #FFFFFF; }
+
 header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -62,11 +80,11 @@ header {
         content: '"'; }
       header blockquote .header-typing:after {
         content: '"'; }
-    header blockquote footer {
+    header blockquote .author-box {
       opacity: 0;
       -webkit-animation: show 4.2s forwards;
               animation: show 4.2s forwards; }
-      header blockquote footer cite {
+      header blockquote .author-box cite {
         font-size: 20px;
         font-weight: 300;
         font-style: italic;
@@ -270,7 +288,38 @@ header {
     padding-top: 30px; }
   .contact-section .contact-box aside {
     width: 100%;
-    padding: 0px; } }
+    padding: 0px; }
+    .contact-section .contact-box aside address {
+      width: 100%; } }
+footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 10vh;
+  background-color: #201C1A; }
+  footer p {
+    display: block;
+    margin: 1px 0;
+    color: #FFFFFF; }
+    footer p a {
+      color: #02913F; }
+      footer p a:hover {
+        text-decoration: underline; }
+
 .intro-section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -566,7 +615,7 @@ nav {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  min-height: 55vh; }
+  min-height: 60vh; }
   .services-section .service-box {
     cursor: default;
     border: 1px solid #c2c2c8;
@@ -596,7 +645,7 @@ nav {
     width: 100%;
     margin: 10px 20px; } }
 .workplace-section {
-  min-height: 40vh; }
+  min-height: 50vh; }
 
 .blinking-cursor {
   font-weight: 100;
