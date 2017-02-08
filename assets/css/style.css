@@ -67,7 +67,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  position: relative; }
+  position: relative;
+  background-image: url("../img/header-img2.jpg");
+  background-position: center;
+  background-attachment: fixed; }
   header blockquote {
     width: 800px; }
     header blockquote .header-typing {
@@ -116,7 +119,8 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background: #FFFFFF; }
   .about-section aside {
     border-radius: 0 25px 25px 0;
     background: #EAEAEC;
@@ -192,6 +196,8 @@ header {
   opacity: 0; }
   .arrow-up.visible {
     opacity: 0.5; }
+  .arrow-up:hover {
+    opacity: 1; }
   .arrow-up .fa-arrow-up {
     padding: 5px;
     border-radius: 50%;
@@ -277,6 +283,9 @@ header {
         .contact-section .icons-box .icon .fa:hover {
           color: #02913F; }
 
+@media (max-width: 940px) {
+  .contact-section .contact-box main, .contact-section .contact-box aside {
+    width: 390px; } }
 @media (max-width: 800px) {
   .contact-section .logo {
     top: -20px;
@@ -348,7 +357,8 @@ footer {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  background: #FFFFFF; }
   .intro-section h1 {
     width: 750px;
     text-align: center;
@@ -519,7 +529,8 @@ nav {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 180vh; }
+  min-height: 200vh;
+  background: #FFFFFF; }
   .projects-section h2 {
     text-align: center;
     font-size: 30px;
@@ -542,8 +553,8 @@ nav {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
     .projects-section .projects-box .project {
-      padding: 10px;
-      margin: 50px;
+      padding: 40px;
+      margin: 60px;
       width: 15%;
       border-radius: 25px;
       border: 1px solid #FFFFFF;
@@ -566,6 +577,9 @@ nav {
       .projects-section .projects-box .project:hover {
         border: 1px solid #c2c2c8; }
 
+@media (max-width: 1240px) {
+  .projects-section .projects-box .project {
+    padding: 10px; } }
 @media (max-width: 1100px) {
   .projects-section .projects-box .project {
     width: 20%; } }
@@ -590,9 +604,12 @@ nav {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-color: #FFFFFF;
+  background-image: url("../img/quote-img2.jpg");
+  background-position: center;
+  background-attachment: fixed; }
   .quote-section blockquote {
-    border-radius: 25px;
     margin: 20px 20px;
     background: rgba(32, 28, 26, 0.8);
     width: 900px;
@@ -635,7 +652,8 @@ nav {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  min-height: 70vh; }
+  min-height: 70vh;
+  background: #FFFFFF; }
   .services-section .service-box {
     border-radius: 25px;
     cursor: default;
@@ -666,7 +684,19 @@ nav {
     width: 100%;
     margin: 10px 20px; } }
 .workplace-section {
-  min-height: 150vh; }
+  min-height: 150vh;
+  position: relative; }
+  .workplace-section::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url("../img/workplace-img.jpg");
+    will-change: transform;
+    z-index: -10; }
 
 .blinking-cursor {
   font-weight: 100;
@@ -727,35 +757,5 @@ nav {
 .config-img {
   background-size: cover;
   background-repeat: no-repeat; }
-  .config-img.header-img {
-    background-image: url("../img/header-img2.jpg");
-    background-position: center;
-    background-attachment: fixed; }
-  .config-img.text-img {
-    background-image: url("../img/text-img.png");
-    position: absolute;
-    bottom: -200px;
-    left: -200px;
-    width: 600px;
-    height: 450px;
-    -webkit-filter: opacity(0.22);
-            filter: opacity(0.22);
-    -webkit-transform: rotate(20deg);
-        -ms-transform: rotate(20deg);
-            transform: rotate(20deg); }
-  .config-img.info-img {
-    background-image: url("../img/info-img.jpg"); }
-  .config-img.workplace-img {
-    background-image: url("../img/workplace-img.jpg");
-    background-position: top;
-    background-attachment: fixed; }
-  .config-img.quote-img {
-    background-image: url("../img/quote-img2.jpg");
-    background-position: center;
-    background-attachment: fixed; }
-
-@media (max-width: 800px) {
-  .config-img .text-img {
-    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
