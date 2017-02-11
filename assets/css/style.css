@@ -98,7 +98,7 @@ header {
 @media (max-width: 1950px) {
   header blockquote .header-typing {
     font-size: 30px; } }
-@media (max-width: 1210px) {
+@media (max-width: 1500px) {
   header aside {
     display: none; } }
 @media (max-width: 900px) {
@@ -331,7 +331,9 @@ footer {
   min-height: 10vh;
   background-color: #201C1A; }
   footer p {
+    text-align: center;
     display: block;
+    font-size: 16px;
     margin: 1px 0;
     color: #FFFFFF; }
     footer p a {
@@ -364,7 +366,7 @@ footer {
     text-align: center;
     font-size: 30px;
     color: #444444;
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
     .intro-section h1 span {
       color: #02913F; }
   .intro-section p {
@@ -377,8 +379,7 @@ footer {
     width: 700px; } }
 @media (max-width: 780px) {
   .intro-section {
-    margin: 20px 0;
-    padding: 0 20px; }
+    padding: 20px; }
     .intro-section h1, .intro-section p {
       width: 100%; }
     .intro-section p {
@@ -588,9 +589,11 @@ nav {
     width: 30%;
     margin: 20px; } }
 @media (max-width: 500px) {
-  .projects-section .projects-box .project {
-    width: 100%;
-    margin: 20px; } }
+  .projects-section {
+    padding: 50px 0; }
+    .projects-section .projects-box .project {
+      width: 100%;
+      margin: 20px; } }
 .quote-section {
   min-height: 80vh;
   display: -webkit-box;
@@ -677,14 +680,16 @@ nav {
       text-align: justify; }
 
 @media (max-width: 750px) {
-  .services-section .service-box {
-    width: 70%; } }
+  .services-section {
+    padding: 50px 0; }
+    .services-section .service-box {
+      width: 70%; } }
 @media (max-width: 425px) {
   .services-section .service-box {
     width: 100%;
     margin: 10px 20px; } }
 .workplace-section {
-  min-height: 150vh;
+  min-height: 100vh;
   position: relative; }
   .workplace-section::before {
     content: "";
