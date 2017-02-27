@@ -15,6 +15,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   margin: 0; }
 
+section {
+  padding: 100px 0; }
+
 a {
   text-decoration: none;
   color: #201C1A; }
@@ -50,7 +53,7 @@ header {
           align-items: center;
   min-height: 100vh;
   position: relative;
-  background-image: url("../img/header-img1.jpg");
+  background-image: url("../img/header-img2.jpg");
   background-position: center;
   background-attachment: fixed; }
   header blockquote {
@@ -88,7 +91,6 @@ header {
     margin: 0 20px;
     width: 100%; } }
 .about-section {
-  margin-top: 200px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -209,7 +211,8 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #EAEAEC;
-  position: relative; }
+  position: relative;
+  padding: 0; }
   .contact-section .logo {
     display: block;
     width: 75px;
@@ -283,7 +286,7 @@ header {
     .contact-section .contact-box main, .contact-section .contact-box aside {
       margin-top: 0px;
       padding: 30px; } }
-@media (max-width: 370px) {
+@media (max-width: 390px) {
   .contact-section .contact-box main {
     width: 100%;
     padding-top: 30px; }
@@ -342,7 +345,8 @@ footer {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  padding-bottom: 0; }
   .intro-section h1 {
     width: 750px;
     text-align: center;
@@ -404,9 +408,6 @@ nav {
   -webkit-transition: 0.3s all;
           transition: 0.3s all;
   box-shadow: 0px 5px 6px -3px rgba(32, 28, 26, 0.75); }
-  nav.transparent {
-    background: rgba(255, 255, 255, 0);
-    box-shadow: none; }
   nav .logo-link {
     margin-left: 20px;
     padding: 0;
@@ -515,7 +516,7 @@ nav {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 200vh;
+  min-height: 100vh;
   background: #FFFFFF; }
   .projects-section h2 {
     text-align: center;
@@ -539,11 +540,11 @@ nav {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
     .projects-section .projects-box .project {
-      padding: 40px;
-      margin: 60px;
-      width: 15%;
+      padding: 20px;
+      margin: 20px;
+      width: 350px;
       border-radius: 25px;
-      border: 1px solid #FFFFFF;
+      border: 1px solid #EAEAEC;
       -webkit-transition: 0.3s all;
               transition: 0.3s all; }
       .projects-section .projects-box .project:hover {
@@ -551,10 +552,11 @@ nav {
             -ms-transform: translate(0, -10px);
                 transform: translate(0, -10px); }
       .projects-section .projects-box .project figure {
-        width: 100%; }
+        margin: 20px auto;
+        width: 100px;
+        height: 100px; }
         .projects-section .projects-box .project figure img {
-          width: 100%;
-          border-radius: 50%; }
+          width: 100%; }
       .projects-section .projects-box .project h3 {
         text-align: center;
         font-size: 20px; }
@@ -563,22 +565,6 @@ nav {
       .projects-section .projects-box .project:hover {
         border: 1px solid #c2c2c8; }
 
-@media (max-width: 1240px) {
-  .projects-section .projects-box .project {
-    padding: 10px; } }
-@media (max-width: 1100px) {
-  .projects-section .projects-box .project {
-    width: 20%; } }
-@media (max-width: 800px) {
-  .projects-section .projects-box .project {
-    width: 30%;
-    margin: 20px; } }
-@media (max-width: 500px) {
-  .projects-section {
-    padding: 50px 0; }
-    .projects-section .projects-box .project {
-      width: 100%;
-      margin: 20px; } }
 .quote-section {
   min-height: 80vh;
   display: -webkit-box;
@@ -641,13 +627,14 @@ nav {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   min-height: 70vh;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  padding-top: 0; }
   .services-section .service-box {
     border-radius: 25px;
     cursor: default;
     border: 1px solid #c2c2c8;
     display: block;
-    width: 20%;
+    width: 350px;
     margin: 20px;
     padding: 20px;
     text-align: center;
@@ -655,27 +642,22 @@ nav {
             transition: 0.3s all; }
     .services-section .service-box:hover {
       box-shadow: 0px 0px 20px 5px #c2c2c8; }
-    .services-section .service-box i {
-      margin: 20px auto;
-      color: #444444; }
+    .services-section .service-box figure {
+      width: 150px;
+      height: 150px;
+      margin: 20px auto; }
+      .services-section .service-box figure img {
+        width: 100%; }
     .services-section .service-box h3 {
       font-size: 20px; }
     .services-section .service-box p {
       font-size: 16px;
       text-align: justify; }
 
-@media (max-width: 750px) {
-  .services-section {
-    padding: 50px 0; }
-    .services-section .service-box {
-      width: 70%; } }
-@media (max-width: 425px) {
-  .services-section .service-box {
-    width: 100%;
-    margin: 10px 20px; } }
 .workplace-section {
   min-height: 100vh;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .workplace-section::before {
     content: "";
     position: fixed;

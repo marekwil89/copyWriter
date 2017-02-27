@@ -13,12 +13,12 @@ $( document ).ready(function() {
 function scrollMoved(){
   var wScroll = $(this).scrollTop();
   if(wScroll > 0){
-    $('nav').removeClass('transparent')
+    // $('nav').removeClass('transparent')
     $('.arrow-up').addClass('visible')
     $('.menu, .logo-img, .fa-bars').addClass('small')
   }
   else{
-    $('nav').addClass('transparent')
+    // $('nav').addClass('transparent')
     $('.arrow-up').removeClass('visible')
     $('.menu, .logo-img, .fa-bars').removeClass('small')
   }
