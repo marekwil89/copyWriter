@@ -15,12 +15,12 @@ function scrollMoved(){
   if(wScroll > 0){
     $('nav').removeClass('transparent')
     $('.arrow-up').addClass('visible')
-    $('.menu, .logo, .fa-bars').addClass('small')
+    $('.menu, .logo-img, .fa-bars').addClass('small')
   }
   else{
     $('nav').addClass('transparent')
     $('.arrow-up').removeClass('visible')
-    $('.menu, .logo, .fa-bars').removeClass('small')
+    $('.menu, .logo-img, .fa-bars').removeClass('small')
   }
 }
 
