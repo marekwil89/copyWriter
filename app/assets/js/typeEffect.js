@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  var headerSentences = ["Doskonale gotuję, władam słowem, latam i koloryzuję."]
+  var headerSentences = ["Konkretny Content Doskonale gotuję władam słowem, latam i koloryzuję"]
 
   writeEffect(headerSentences, '.header-typing', 70)
 });
