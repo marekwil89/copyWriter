@@ -317,7 +317,8 @@ header .main-box p:after {
   z-index: 4000; }
 
 .loader .fa-spinner {
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  color: #02913F; }
 
 .loader .load-text {
   width: 250px;
