@@ -232,6 +232,7 @@ footer {
   -ms-flex-direction: column;
       flex-direction: column;
   min-height: 10vh;
+  padding: 20px 0;
   background-color: #201C1A; }
 
 footer p {
@@ -307,11 +308,16 @@ header .main-box p:after {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   top: 0px;
   right: 0px;
   left: 0px;
   bottom: 0px;
   z-index: 4000; }
+
+.loader .fa-spinner {
+  margin-bottom: 35px; }
 
 .loader .load-text {
   width: 250px;
@@ -335,7 +341,7 @@ nav {
   box-shadow: 0px 5px 6px -3px rgba(32, 28, 26, 0.75); }
 
 nav.transparent {
-  background: rgba(255, 255, 255, 0);
+  background: white;
   box-shadow: none; }
 
 nav .logo-link {
@@ -388,7 +394,6 @@ nav .logo-img.small {
     transition: 0.7s all;
     background: #FFFFFF;
     width: 100%;
-    border: 1px solid #EAEAEC;
     position: fixed;
     top: 1200px;
     bottom: -1200px;
